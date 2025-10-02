@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>hbd</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/icon.PNG" type="image/png">
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" id="loginCard">
+      <h1>ehhhhh aujourd'hui c'est mon anniversaire 🎉</h1>
+      <p>ptit formulaire pour l'occasion</p>
+
+      <label for="user">mon blaze</label>
+      <input id="user" type="text" autocomplete="off">
+
+      <label for="pass">mot de passe</label>
+      <input id="pass" type="password" placeholder="quel age je prends" autocomplete="off">
+
+      <div class="error hidden" id="err"></div>
+      <button id="go">ok</button>
+    </div>
+
+    <div class="card hidden" id="surpriseCard">
+      <div class="surprise">
+        <img id="surpriseImg" src="https://pin.it/6mFkHqpAI" alt="">
+        <h1 id="surpriseTitle"></h1>
+        <p id="surpriseText"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

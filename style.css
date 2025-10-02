@@ -1,0 +1,21 @@
+    :root{
+        --bg:#0f1724;
+        --card:#0b1220; 
+        --accent:#ff6b6b;--text:#e6eef8}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#081225 0%, #071528 100%);color:var(--text)}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{width:100%;max-width:420px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:20px;box-shadow:0 6px 30px rgba(2,6,23,.6)}
+    h1{margin:0 0 10px;font-size:20px}
+    p{margin:0 0 18px;color:#bfcfe2}
+    label{display:block;font-size:13px;margin-bottom:6px}
+    input[type="text"], input[type="password"]{width:100%;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.02);color:var(--text);font-size:15px;margin-bottom:12px}
+    button{width:100%;padding:10px;background:var(--accent);border:none;border-radius:10px;color:white;font-weight:600;cursor:pointer;font-size:15px}
+    .error{color:#ff9b9b;margin:8px 0;font-size:14px}
+    .hidden{display:none}
+    .surprise{text-align:center}
+    .surprise img{max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto 12px}
+    .hint{font-size:13px;color:#9fb0d0;margin-top:8px}
+    @media (max-width:420px){.card{padding:16px}}
+
+
