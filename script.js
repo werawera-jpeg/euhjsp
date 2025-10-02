@@ -1,6 +1,8 @@
 const username = document.getElementById('user');
 const max = '19'; 
-const imageUrl = 'images/gateau.jfif'; 
+// const imageUrl = 'images/gateau.jfif'; 
+const imageUrl = 'images/gateau2.PNG'; 
+
 const finalText = "'And give thanks for everything to God the Father in the name of our Lord Jesus Christ.' - Eph 5:20";
 
 const pass = document.getElementById('pass');
