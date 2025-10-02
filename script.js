@@ -1,9 +1,9 @@
 const username = document.getElementById('user');
-const expectedPassword = '19'; 
+const max = '19'; 
 const imageUrl = 'images/gateau.jfif'; 
 const finalText = "'And give thanks for everything to God the Father in the name of our Lord Jesus Christ.' - Eph 5:20";
 
-const passwd = document.getElementById('pass');
+const pass = document.getElementById('pass');
 const error = document.getElementById('err');
 const goBtn = document.getElementById('go');
 const loginCard = document.getElementById('loginCard');
@@ -21,7 +21,7 @@ function showError(msg){
 }
 
 async function check(p){
-  if( p === expectedPassword) return true;
+  if( p === max) return true;
   return false;
 }
 
@@ -31,7 +31,7 @@ goBtn.addEventListener('click', async () => {;
     const finalTitle = 'happy birthday ' + u + ' ! 🥳';
     surpriseTitle.textContent = finalTitle;
 
-    const p = passwd.value;
+    const p = pass.value;
     if(!u || !p || u===" ") { showError('remplis les champs gros'); return; }
     const ok = await check(p);
     if(ok){
