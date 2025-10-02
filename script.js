@@ -32,7 +32,7 @@ goBtn.addEventListener('click', async () => {;
     surpriseTitle.textContent = finalTitle;
 
     const p = passwd.value;
-    if(!u || !p || u===" ") { showError('remplis les champs gros'); return; }
+    if(!u || !p || u===" ") { showError('euh remplis les champs gros'); return; }
     const ok = await check(p);
     if(ok){
         loginCard.classList.add('hidden');
